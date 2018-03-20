@@ -38,14 +38,14 @@ public class HelloWorld {
     @Path("/json")
     @Produces({ "application/json" })
     public String getHelloWorldJSON() {
-        return "{\"result\":\"" + helloService.createHelloMessage("World") + " modified by MichaelW\"}";
+        return "{\"result\":\"" + helloService.createHelloMessage("World") + " modified by MichaelW built on command line\"}";
     }
 
     @GET
     @Path("/xml")
     @Produces({ "application/xml" })
     public String getHelloWorldXML() {
-        return "<xml><result>" + helloService.createHelloMessage("World") + " modified by MichaelW</result></xml>";
+        return "<xml><result>" + helloService.createHelloMessage("World") + " modified by MichaelW build on command line</result></xml>";
     }
 
 }
